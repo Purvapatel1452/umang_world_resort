@@ -1,0 +1,476 @@
+/* Entertainment Page Styles */
+.entertainment {
+  margin-top: 80px;
+}
+
+/* Entertainment Hero Section */
+.entertainment-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.entertainment-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.entertainment-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.entertainment-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.entertainment-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Entertainment Overview Section */
+.entertainment-overview {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.overview-content {
+  text-align: center;
+}
+
+.overview-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.overview-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.entertainment-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-item p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Movie Nights Section */
+.movie-nights {
+  padding: 100px 0;
+  background: white;
+}
+
+.movie-nights h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.movie-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.movie-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.movie-info p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.movie-features {
+  display: grid;
+  gap: 20px;
+}
+
+.movie-features .feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.movie-features .feature span {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.movie-features .feature h4 {
+  color: #333;
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.movie-features .feature p {
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.movie-schedule {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 4px solid #ffd700;
+}
+
+.movie-schedule h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.schedule-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.schedule-item:last-child {
+  border-bottom: none;
+}
+
+.schedule-item span:first-child {
+  color: #666;
+  font-weight: 500;
+}
+
+.schedule-item span:last-child {
+  color: #333;
+  font-weight: bold;
+}
+
+/* DJ Nights Section */
+.dj-nights {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.dj-nights h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.dj-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 60px;
+  align-items: start;
+}
+
+.dj-info h3 {
+  font-size: 1.8rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.dj-info p {
+  font-size: 1.1rem;
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.dj-features {
+  display: grid;
+  gap: 20px;
+}
+
+.dj-features .feature {
+  display: flex;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.dj-features .feature span {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.dj-features .feature h4 {
+  color: #333;
+  margin: 0 0 5px 0;
+  font-size: 1.1rem;
+}
+
+.dj-features .feature p {
+  color: #666;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.dj-schedule {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 4px solid #ffd700;
+}
+
+.dj-schedule h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+/* Event Management Section */
+.event-management {
+  padding: 100px 0;
+  background: white;
+}
+
+.event-management h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.event-management p {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 60px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.event-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.event-icon {
+  font-size: 3rem;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+
+.event-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.event-card p {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.event-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.event-card li {
+  padding: 5px 0;
+  color: #666;
+  position: relative;
+  padding-left: 20px;
+}
+
+.event-card li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+/* Entertainment CTA Section */
+.entertainment-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .entertainment-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .entertainment-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .overview-content h2 {
+    font-size: 2rem;
+  }
+  
+  .entertainment-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .movie-nights h2 {
+    font-size: 2rem;
+  }
+  
+  .movie-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .dj-nights h2 {
+    font-size: 2rem;
+  }
+  
+  .dj-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .event-management h2 {
+    font-size: 2rem;
+  }
+  
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .entertainment-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .overview-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .movie-nights h2 {
+    font-size: 1.8rem;
+  }
+  
+  .dj-nights h2 {
+    font-size: 1.8rem;
+  }
+  
+  .event-management h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .feature-item {
+    padding: 25px 20px;
+  }
+  
+  .movie-schedule {
+    padding: 25px 20px;
+  }
+  
+  .dj-schedule {
+    padding: 25px 20px;
+  }
+  
+  .event-card {
+    padding: 25px 20px;
+  }
+} 

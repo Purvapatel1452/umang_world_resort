@@ -1,0 +1,378 @@
+/* Pool Page Styles */
+.pool {
+  margin-top: 80px;
+}
+
+/* Pool Hero Section */
+.pool-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.pool-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.pool-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.pool-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.pool-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Pool Overview Section */
+.pool-overview {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.overview-content {
+  text-align: center;
+}
+
+.overview-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.overview-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.pool-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.feature-item {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.feature-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.feature-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.feature-item p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Pool Details Section */
+.pool-details {
+  padding: 100px 0;
+  background: white;
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.detail-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 4px solid #ffd700;
+}
+
+.detail-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.detail-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.detail-card li {
+  padding: 8px 0;
+  color: #666;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 20px;
+}
+
+.detail-card li::before {
+  content: '🏊';
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+}
+
+.detail-card li:last-child {
+  border-bottom: none;
+}
+
+/* Pool Schedule Section */
+.pool-schedule {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.pool-schedule h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.schedule-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.schedule-item {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.schedule-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.schedule-item h3 {
+  color: #ffd700;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.time-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.time-item:last-child {
+  border-bottom: none;
+}
+
+.time-item span:first-child {
+  color: #666;
+  font-weight: 500;
+}
+
+.time-item span:last-child {
+  color: #333;
+  font-weight: bold;
+}
+
+/* Pool Safety Section */
+.pool-safety {
+  padding: 100px 0;
+  background: white;
+}
+
+.pool-safety h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.safety-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.safety-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: #f8f9fa;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.safety-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+
+.safety-icon {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.safety-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.safety-item p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Pool CTA Section */
+.pool-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .pool-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .pool-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .overview-content h2 {
+    font-size: 2rem;
+  }
+  
+  .pool-features {
+    grid-template-columns: 1fr;
+  }
+  
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pool-schedule h2 {
+    font-size: 2rem;
+  }
+  
+  .schedule-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .pool-safety h2 {
+    font-size: 2rem;
+  }
+  
+  .safety-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .pool-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .overview-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .pool-schedule h2 {
+    font-size: 1.8rem;
+  }
+  
+  .pool-safety h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .feature-item {
+    padding: 25px 20px;
+  }
+  
+  .detail-card {
+    padding: 25px 20px;
+  }
+  
+  .schedule-item {
+    padding: 25px 20px;
+  }
+  
+  .safety-item {
+    padding: 25px 20px;
+  }
+} 
