@@ -1,0 +1,513 @@
+/* Indoor Games Page Styles */
+.indoor-games {
+  margin-top: 80px;
+}
+
+/* Games Hero Section */
+.games-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: white;
+  position: relative;
+}
+
+.games-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.games-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.games-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.games-hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.9;
+}
+
+/* Games Overview Section */
+.games-overview {
+  padding: 80px 0;
+  background: #f8f9fa;
+}
+
+.overview-content {
+  text-align: center;
+}
+
+.overview-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.overview-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.overview-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.overview-item {
+  background: white;
+  padding: 30px 20px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.overview-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.overview-icon {
+  font-size: 2.5rem;
+  color: #ffd700;
+  margin-bottom: 15px;
+}
+
+.overview-item h3 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.overview-item p {
+  color: #666;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Games Grid Section */
+.games-grid-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.games-grid-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 40px;
+}
+
+.game-card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.game-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+  border-color: #ffd700;
+}
+
+.game-image {
+  position: relative;
+  height: 250px;
+}
+
+.image-placeholder {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.game-overlay {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.players-badge, .duration-badge {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.players-badge {
+  background: #ffd700;
+  color: #000;
+}
+
+.game-content {
+  padding: 30px;
+}
+
+.game-header {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.game-icon {
+  font-size: 2rem;
+  color: #ffd700;
+}
+
+.game-header h3 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 0;
+}
+
+.game-description {
+  color: #666;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.game-features h4 {
+  color: #ffd700;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
+
+.game-features ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.game-features li {
+  padding: 5px 0;
+  color: #666;
+  position: relative;
+  padding-left: 20px;
+}
+
+.game-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #ffd700;
+  font-weight: bold;
+}
+
+.game-info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 20px;
+  border-top: 1px solid #eee;
+}
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info-label {
+  font-size: 0.9rem;
+  color: #999;
+  font-weight: bold;
+}
+
+.info-value {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Tournament Section */
+.tournament-section {
+  padding: 100px 0;
+  background: #f8f9fa;
+}
+
+.tournament-content {
+  text-align: center;
+}
+
+.tournament-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.tournament-content p {
+  font-size: 1.2rem;
+  color: #666;
+  margin-bottom: 50px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.tournament-types {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.tournament-type {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.tournament-type:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+.tournament-type h3 {
+  color: #ffd700;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.tournament-type ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tournament-type li {
+  padding: 8px 0;
+  color: #666;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 20px;
+}
+
+.tournament-type li::before {
+  content: '🏆';
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+}
+
+.tournament-type li:last-child {
+  border-bottom: none;
+}
+
+/* Rules Section */
+.rules-section {
+  padding: 100px 0;
+  background: white;
+}
+
+.rules-section h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: #333;
+}
+
+.rules-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+}
+
+.rule-card {
+  background: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  border-left: 4px solid #ffd700;
+}
+
+.rule-card h3 {
+  color: #333;
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+}
+
+.rule-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.rule-card li {
+  padding: 8px 0;
+  color: #666;
+  border-bottom: 1px solid #eee;
+  position: relative;
+  padding-left: 20px;
+}
+
+.rule-card li::before {
+  content: '📋';
+  position: absolute;
+  left: 0;
+  font-size: 0.9rem;
+}
+
+.rule-card li:last-child {
+  border-bottom: none;
+}
+
+/* Games CTA Section */
+.games-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .games-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .games-hero-content p {
+    font-size: 1.1rem;
+  }
+  
+  .overview-content h2 {
+    font-size: 2rem;
+  }
+  
+  .games-grid-section h2 {
+    font-size: 2rem;
+  }
+  
+  .games-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .tournament-content h2 {
+    font-size: 2rem;
+  }
+  
+  .tournament-types {
+    grid-template-columns: 1fr;
+  }
+  
+  .rules-section h2 {
+    font-size: 2rem;
+  }
+  
+  .rules-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .games-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .overview-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .games-grid-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .tournament-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .rules-section h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .game-content {
+    padding: 20px;
+  }
+  
+  .game-header h3 {
+    font-size: 1.3rem;
+  }
+  
+  .game-info {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .tournament-type {
+    padding: 25px 20px;
+  }
+  
+  .rule-card {
+    padding: 25px 20px;
+  }
+} 

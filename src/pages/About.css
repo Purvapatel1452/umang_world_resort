@@ -1,0 +1,387 @@
+/* About Page Styles - Green Nature Theme */
+.about {
+  margin-top: 80px;
+}
+
+/* About Hero Section */
+.about-hero {
+  height: 60vh;
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--text-light);
+  position: relative;
+}
+
+.about-hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.about-hero-content {
+  position: relative;
+  z-index: 2;
+}
+
+.about-hero-content h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+.about-hero-content p {
+  font-size: 1.5rem;
+  color: var(--accent-green);
+}
+
+/* Story Section */
+.story-section {
+  padding: 100px 0;
+  background: var(--dark-bg);
+}
+
+.story-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.story-text h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--text-light);
+}
+
+.story-text p {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: var(--text-muted);
+  margin-bottom: 20px;
+}
+
+.story-image {
+  display: flex;
+  justify-content: center;
+}
+
+.image-placeholder {
+  width: 400px;
+  height: 300px;
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-light);
+  font-size: 1.2rem;
+}
+
+/* Mission Section */
+.mission-section {
+  padding: 100px 0;
+  background: var(--darker-bg);
+}
+
+.mission-content {
+  text-align: center;
+}
+
+.mission-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--text-light);
+}
+
+.mission-text {
+  font-size: 1.3rem;
+  color: var(--text-muted);
+  margin-bottom: 60px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.6;
+}
+
+.mission-values {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 40px;
+  margin-top: 60px;
+}
+
+.value-item {
+  text-align: center;
+  padding: 30px 20px;
+  background: var(--dark-bg);
+  border-radius: 15px;
+  box-shadow: 0 5px 15px var(--shadow-dark);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-light);
+}
+
+.value-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px var(--shadow-dark);
+  border-color: var(--accent-green);
+}
+
+.value-icon {
+  font-size: 3rem;
+  color: var(--accent-green);
+  margin-bottom: 20px;
+}
+
+.value-item h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--text-light);
+}
+
+.value-item p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Why Choose Us Section */
+.why-choose-us {
+  padding: 100px 0;
+  background: var(--dark-bg);
+}
+
+.why-choose-us h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: var(--text-light);
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+}
+
+.feature-card {
+  padding: 40px 30px;
+  background: var(--darker-bg);
+  border-radius: 15px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px var(--shadow-dark);
+  border-color: var(--accent-green);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: var(--accent-green);
+  margin-bottom: 20px;
+}
+
+.feature-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 15px;
+  color: var(--text-light);
+}
+
+.feature-card p {
+  color: var(--text-muted);
+  line-height: 1.6;
+}
+
+/* Facilities Overview */
+.facilities-overview {
+  padding: 100px 0;
+  background: var(--darker-bg);
+}
+
+.facilities-overview h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 60px;
+  color: var(--text-light);
+}
+
+.facilities-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+.facility-item {
+  background: var(--dark-bg);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px var(--shadow-dark);
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-light);
+}
+
+.facility-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px var(--shadow-dark);
+  border-color: var(--accent-green);
+}
+
+.facility-item h3 {
+  color: var(--accent-green);
+  font-size: 1.3rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.facility-item ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.facility-item li {
+  padding: 8px 0;
+  color: var(--text-muted);
+  border-bottom: 1px solid var(--border-light);
+  position: relative;
+  padding-left: 20px;
+}
+
+.facility-item li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+  font-weight: bold;
+}
+
+.facility-item li:last-child {
+  border-bottom: none;
+}
+
+/* About CTA Section */
+.about-cta {
+  padding: 100px 0;
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--secondary-green) 100%);
+  color: var(--text-light);
+  text-align: center;
+}
+
+.cta-content h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.cta-content p {
+  font-size: 1.2rem;
+  margin-bottom: 40px;
+  opacity: 0.9;
+}
+
+.cta-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+  .about-hero-content h1 {
+    font-size: 2.5rem;
+  }
+  
+  .about-hero-content p {
+    font-size: 1.2rem;
+  }
+  
+  .story-content {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+  
+  .story-text h2 {
+    font-size: 2rem;
+  }
+  
+  .mission-content h2 {
+    font-size: 2rem;
+  }
+  
+  .mission-text {
+    font-size: 1.1rem;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 2rem;
+  }
+  
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .facilities-overview h2 {
+    font-size: 2rem;
+  }
+  
+  .facilities-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .cta-content h2 {
+    font-size: 2rem;
+  }
+  
+  .cta-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .image-placeholder {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .about-hero-content h1 {
+    font-size: 2rem;
+  }
+  
+  .story-text h2 {
+    font-size: 1.8rem;
+  }
+  
+  .mission-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .why-choose-us h2 {
+    font-size: 1.8rem;
+  }
+  
+  .facilities-overview h2 {
+    font-size: 1.8rem;
+  }
+  
+  .cta-content h2 {
+    font-size: 1.8rem;
+  }
+  
+  .feature-card {
+    padding: 30px 20px;
+  }
+  
+  .facility-item {
+    padding: 25px 20px;
+  }
+} 
