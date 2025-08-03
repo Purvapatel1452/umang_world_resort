@@ -196,6 +196,15 @@ const Home = () => {
             <source src="/videos/resort-hero.mp4" type="video/mp4" />
             <div className="hero-fallback-bg"></div>
           </video>
+          {/* YouTube fallback - replace VIDEO_ID with your YouTube video ID */}
+          {/* <iframe 
+            className="hero-video-bg"
+            src="https://www.youtube.com/embed/VIDEO_ID?autoplay=1&mute=1&loop=1&playlist=VIDEO_ID&controls=0&showinfo=0&rel=0&modestbranding=1"
+            title="Umang World Resort"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          ></iframe> */}
           <div className="hero-overlay"></div>
         </div>
         <div className="hero-content">
