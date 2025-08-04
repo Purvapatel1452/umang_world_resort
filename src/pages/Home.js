@@ -307,7 +307,8 @@ const Home = () => {
               <img 
                 src="/images/resort-main.jpg" 
                 alt="Umang World Resort - Main View"
-                className="resort-main-img"
+                className="resort-main-img responsive-img"
+                loading="lazy"
               />
             </div>
           </div>
@@ -355,7 +356,8 @@ const Home = () => {
                   <img 
                     src={adventure.image} 
                     alt={adventure.title}
-                    className="adventure-img"
+                    className="adventure-img responsive-img"
+                    loading="lazy"
                   />
                   <div className="adventure-overlay">
                     <div className="difficulty-badge">{adventure.difficulty}</div>
@@ -397,7 +399,8 @@ const Home = () => {
                   <img 
                     src={game.image} 
                     alt={game.title}
-                    className="game-img"
+                    className="game-img responsive-img"
+                    loading="lazy"
                   />
                 </div>
                 <div className="game-content">
@@ -444,7 +447,8 @@ const Home = () => {
               <img 
                 src="/images/swimming-pool.jpg" 
                 alt="Swimming Pool"
-                className="pool-img"
+                className="pool-img responsive-img"
+                loading="lazy"
               />
             </div>
           </div>
@@ -518,7 +522,8 @@ const Home = () => {
               <img 
                 src="/images/rooms/room-1.jpg" 
                 alt="Luxury Room"
-                className="room-img"
+                className="room-img responsive-img"
+                loading="lazy"
               />
             </div>
           </div>
@@ -537,7 +542,8 @@ const Home = () => {
               <img 
                 src="/images/dining/dining-1.jpg" 
                 alt="Dining Area"
-                className="dining-img"
+                className="dining-img responsive-img"
+                loading="lazy"
               />
             </div>
             <div className="dining-text">
@@ -574,22 +580,22 @@ const Home = () => {
           </div>
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img src="/images/resort-exterior.jpg" alt="Resort Exterior" />
+              <img src="/images/resort-exterior.jpg" alt="Resort Exterior" className="responsive-img" loading="lazy" />
             </div>
             <div className="gallery-item">
-              <img src="/images/swimming-pool.jpg" alt="Swimming Pool" />
+              <img src="/images/swimming-pool.jpg" alt="Swimming Pool" className="responsive-img" loading="lazy" />
             </div>
             <div className="gallery-item">
-              <img src="/images/outdoor-activity.jpg" alt="Outdoor Activity" />
+              <img src="/images/outdoor-activity.jpg" alt="Outdoor Activity" className="responsive-img" loading="lazy" />
             </div>
             <div className="gallery-item">
-              <img src="/images/air-hockey.jpg" alt="Air Hockey" />
+              <img src="/images/air-hockey.jpg" alt="Air Hockey" className="responsive-img" loading="lazy" />
             </div>
             <div className="gallery-item">
-              <img src="/images/resort-aerial.jpg" alt="Resort Aerial View" />
+              <img src="/images/resort-aerial.jpg" alt="Resort Aerial View" className="responsive-img" loading="lazy" />
             </div>
             <div className="gallery-item">
-              <img src="/images/resort-main.jpg" alt="Resort Main" />
+              <img src="/images/resort-main.jpg" alt="Resort Main" className="responsive-img" loading="lazy" />
             </div>
           </div>
         </div>

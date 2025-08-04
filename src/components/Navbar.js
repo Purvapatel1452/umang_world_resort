@@ -65,7 +65,7 @@ const Navbar = () => {
             <img 
               src="/images/umang-logo.png" 
               alt="Umang World Resort & Jaymadi Farm House" 
-              className="logo-image"
+              className="logo-image responsive-img"
               onError={(e) => {
                 e.target.style.display = 'none';
                 e.target.nextSibling.style.display = 'flex';

@@ -538,10 +538,23 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
+  max-width: 100%;
 }
 
 .resort-main-img:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .resort-main-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .resort-main-img {
+    height: 250px;
+  }
 }
 
 /* Adventures Section */
@@ -632,10 +645,23 @@
   height: 100%;
   object-fit: cover;
   transition: var(--transition);
+  max-width: 100%;
 }
 
 .adventure-card:hover .adventure-img {
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .adventure-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .adventure-image {
+    height: 180px;
+  }
 }
 
 .adventure-overlay {
@@ -749,10 +775,23 @@
   height: 100%;
   object-fit: cover;
   transition: var(--transition);
+  max-width: 100%;
 }
 
 .game-card:hover .game-img {
   transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .game-image {
+    height: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .game-image {
+    height: 120px;
+  }
 }
 
 .game-content {
@@ -845,10 +884,23 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
+  max-width: 100%;
 }
 
 .pool-img:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .pool-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pool-img {
+    height: 250px;
+  }
 }
 
 /* Entertainment Section */
@@ -964,10 +1016,23 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
+  max-width: 100%;
 }
 
 .room-img:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .room-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .room-img {
+    height: 250px;
+  }
 }
 
 /* Dining Section */
@@ -994,10 +1059,23 @@
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-lg);
   transition: var(--transition);
+  max-width: 100%;
 }
 
 .dining-img:hover {
   transform: scale(1.02);
+}
+
+@media (max-width: 768px) {
+  .dining-img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .dining-img {
+    height: 250px;
+  }
 }
 
 .dining-text h3 {
@@ -1075,10 +1153,33 @@
   height: 100%;
   object-fit: cover;
   transition: var(--transition);
+  max-width: 100%;
 }
 
 .gallery-item:hover img {
   transform: scale(1.1);
+}
+
+@media (max-width: 768px) {
+  .gallery-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+  }
+  
+  .gallery-item {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .gallery-grid {
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+  }
+  
+  .gallery-item {
+    height: 180px;
+  }
 }
 
 /* Contact Section */
