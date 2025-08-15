@@ -84,7 +84,7 @@ const Home = () => {
       features: ["Scenic Beauty", "Photo Opportunities", "Relaxation Spot", "Family-Friendly"],
       difficulty: "Easy",
       duration: "Flexible",
-      image: "/images/resort-exterior.jpg"
+      image: "/images/mountain.jpg"
     }
   ];
 
@@ -112,13 +112,6 @@ const Home = () => {
     },
     {
       id: 4,
-      title: "Board Games",
-      description: "Collection of classic board games including chess, carrom, and ludo.",
-      icon: FaGamepad,
-      image: "/images/air-hockey.jpg"
-    },
-    {
-      id: 5,
       title: "Foosball",
       description: "Exciting foosball tables for team competitions and fun gameplay.",
       icon: FaGamepad,
@@ -520,7 +513,7 @@ const Home = () => {
             </div>
             <div className="rooms-image">
               <img 
-                src="/images/rooms/room-1.jpg" 
+                src="/images/room.jpg" 
                 alt="Luxury Room"
                 className="room-img responsive-img"
                 loading="lazy"
@@ -540,7 +533,7 @@ const Home = () => {
           <div className="dining-content">
             <div className="dining-image">
               <img 
-                src="/images/dining/dining-1.jpg" 
+                src="/images/dining.jpg" 
                 alt="Dining Area"
                 className="dining-img responsive-img"
                 loading="lazy"
@@ -580,7 +573,7 @@ const Home = () => {
           </div>
           <div className="gallery-grid">
             <div className="gallery-item">
-              <img src="/images/resort-exterior.jpg" alt="Resort Exterior" className="responsive-img" loading="lazy" />
+              <img src="/images/photoGallery.jpg" alt="Resort Exterior" className="responsive-img" loading="lazy" />
             </div>
             <div className="gallery-item">
               <img src="/images/swimming-pool.jpg" alt="Swimming Pool" className="responsive-img" loading="lazy" />

@@ -52,7 +52,7 @@ const Adventures = () => {
       features: ["Scenic Beauty", "Photo Opportunities", "Relaxation Spot", "Family-Friendly"],
       difficulty: "Easy",
       duration: "Flexible",
-      image: "Mountain Waterfall"
+      image: "muntain"
     }
   ];
 
