@@ -1133,8 +1133,9 @@
 }
 
 .contact-form-map {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 4rem;
 }
 
@@ -1143,6 +1144,7 @@
   padding: 3rem;
   border-radius: var(--border-radius);
   box-shadow: var(--shadow-md);
+  width: 90%;
 }
 
 .contact-form h3 {

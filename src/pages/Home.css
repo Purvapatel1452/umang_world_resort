@@ -1233,7 +1233,7 @@
 }
 
 .contact-form-map {
-  display: grid;
+  display: flex;
   grid-template-columns: 1fr 1fr;
   gap: 4rem;
 }

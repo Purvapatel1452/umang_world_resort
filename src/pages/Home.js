@@ -727,7 +727,7 @@ const Home = () => {
                 </button>
               </form>
             </div>
-            <div className="map-section">
+            {/* <div className="map-section">
               <h3>Find Us</h3>
               <div className="map-placeholder">
                 <span>Google Maps Integration</span>
@@ -757,7 +757,7 @@ const Home = () => {
                   </div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </section>
